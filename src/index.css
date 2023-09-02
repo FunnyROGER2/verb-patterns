@@ -16,3 +16,10 @@ body {
   flex-direction: column;
   height: 100%;
 }
+
+.example {
+  min-height: 200px;
+	margin: auto 0;
+  word-break: break-word;
+  font-size: 24px;
+}

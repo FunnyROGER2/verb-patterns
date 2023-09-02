@@ -1,6 +1,9 @@
 import React, { PureComponent } from "react";
 import { verbs } from "./verbs";
 
+const renderHTML = (rawHTML) =>
+  React.createElement("div", { dangerouslySetInnerHTML: { __html: rawHTML } });
+
 class App extends PureComponent {
   state = {
     isOptionsShown: true,
@@ -10,7 +13,7 @@ class App extends PureComponent {
   render() {
     return (
       <div className="container h-100 d-flex flex-column">
-        <h1 className="display-1">Verb patterns</h1>
+        <h1 className="display-1 my-2">Verb patterns</h1>
         <div className="flex-grow-1 d-flex flex-column">
           <div className="d-flex mb-auto">
             <h2 className="h1">{this.state.currentVerb?.name}</h2>
@@ -22,7 +25,14 @@ class App extends PureComponent {
               {this.state.result ? this.state.currentVerb.type : ""}
             </span>
           </div>
-          <div className="mb-3">
+          {this.state.result ? (
+            <div className="example">
+              {renderHTML(this.state.currentVerb?.example)}
+            </div>
+          ) : (
+            ""
+          )}
+          <div className="mb-3 mt-auto">
             {this.state.isOptionsShown ? (
               <div className="btn-group">
                 <button

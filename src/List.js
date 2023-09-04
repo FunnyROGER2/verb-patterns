@@ -124,7 +124,7 @@ class List extends PureComponent {
 
   setFilter = (e) => {
     this.setState({
-      filter: e.target.value,
+      filter: e.target.value.toLowerCase(),
     });
   };
 

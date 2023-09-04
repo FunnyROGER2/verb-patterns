@@ -23,3 +23,18 @@ body {
   word-break: break-word;
   font-size: 24px;
 }
+
+.list-wrapper {
+  min-height: 0;
+  flex-grow: 1;
+}
+
+.list-table {
+  table-layout: fixed;
+}
+
+.list-table__head {
+  position: sticky;
+	top: 0;
+	z-index: 1;
+}

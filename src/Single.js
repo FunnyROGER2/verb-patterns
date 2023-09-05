@@ -10,6 +10,50 @@ class Single extends PureComponent {
     currentVerb: null,
   };
 
+  componentDidMount() {
+    this.showVerb();
+  }
+
+  showVerb = () => {
+    this.setState({
+      currentVerb: this.getVerb(),
+    });
+  };
+
+  getVerbType = (name) => {
+    for (const type in verbs) {
+      if (verbs[type].some((verb) => verb.name === name)) {
+        return type;
+      }
+    }
+    return null;
+  };
+
+  getVerb = () => {
+    const verbsArr = [...verbs.gerund, ...verbs.to, ...verbs.empty];
+    const num = Math.floor(Math.random(1) * verbsArr.length);
+    const verb = [...verbs.gerund, ...verbs.to, ...verbs.empty][num];
+    verb.type = this.getVerbType(verb.name);
+    return verb;
+  };
+
+  choseVerb = (type) => {
+    return () => {
+      this.setState({
+        result: type === this.state.currentVerb.type ? "success" : "danger",
+        isOptionsShown: false,
+      });
+    };
+  };
+
+  next = () => {
+    this.showVerb();
+    this.setState({
+      result: null,
+      isOptionsShown: true,
+    });
+  };
+
   render() {
     return (
       <div className="flex-grow-1 d-flex flex-column p-3">
@@ -64,50 +108,6 @@ class Single extends PureComponent {
       </div>
     );
   }
-
-  componentDidMount() {
-    this.showVerb();
-  }
-
-  showVerb = () => {
-    this.setState({
-      currentVerb: this.getVerb(),
-    });
-  };
-
-  getVerbType = (name) => {
-    for (const type in verbs) {
-      if (verbs[type].some((verb) => verb.name === name)) {
-        return type;
-      }
-    }
-    return null;
-  };
-
-  getVerb = () => {
-    const verbsArr = [...verbs.gerund, ...verbs.to, ...verbs.empty];
-    const num = Math.floor(Math.random(1) * verbsArr.length);
-    const verb = [...verbs.gerund, ...verbs.to, ...verbs.empty][num];
-    verb.type = this.getVerbType(verb.name);
-    return verb;
-  };
-
-  choseVerb = (type) => {
-    return () => {
-      this.setState({
-        result: type === this.state.currentVerb.type ? "success" : "danger",
-        isOptionsShown: false,
-      });
-    };
-  };
-
-  next = () => {
-    this.showVerb();
-    this.setState({
-      result: null,
-      isOptionsShown: true,
-    });
-  };
 }
 
 export default Single;

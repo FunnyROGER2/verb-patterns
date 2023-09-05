@@ -10,6 +10,8 @@ class List extends PureComponent {
     currentVerb: null,
   };
 
+  filteredVerbs = {};
+
   getTheBiggestVerbType = () => {
     let largestKey = null;
     let largestLength = -1;
@@ -23,8 +25,6 @@ class List extends PureComponent {
 
     return largestKey;
   };
-
-  filteredVerbs = {}
 
   getFilteredVerbs = () => {
     const filteredVerbs = {};
@@ -65,13 +65,33 @@ class List extends PureComponent {
         ))}
       </tr>
     ));
-  }
+  };
+
+  clickVerb = (verb) => {
+    return () => {
+      this.setState({
+        currentVerb: verb,
+      });
+    };
+  };
+
+  setFilter = (e) => {
+    this.setState({
+      filter: e.target.value.toLowerCase(),
+    });
+  };
+
+  reset = () => {
+    this.setState({
+      filter: "",
+    });
+  };
 
   render() {
     return (
       <div className="list-wrapper d-flex flex-column">
         <div className="p-1 bg-body">
-          <form className="input-group mb-3">
+          <form className="input-group my-1">
             <input
               type="text"
               className="form-control"
@@ -112,26 +132,6 @@ class List extends PureComponent {
         )}
       </div>
     );
-  }
-
-  clickVerb = (verb) => {
-    return () => {
-      this.setState({
-        currentVerb: verb,
-      });
-    };
-  };
-
-  setFilter = (e) => {
-    this.setState({
-      filter: e.target.value.toLowerCase(),
-    });
-  };
-
-  reset = () => {
-    this.setState({
-      filter: ""
-    });
   }
 }
 

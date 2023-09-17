@@ -12,14 +12,17 @@ class List extends PureComponent {
 
   filteredVerbs = {};
 
-  getTheBiggestVerbType = () => {
+  getTheBiggestVerbType = (filterableVerbs = verbs) => {
     let largestKey = null;
     let largestLength = -1;
 
-    for (const key in verbs) {
-      if (Array.isArray(verbs[key]) && verbs[key].length > largestLength) {
+    for (const key in filterableVerbs) {
+      if (
+        Array.isArray(filterableVerbs[key]) &&
+        filterableVerbs[key].length > largestLength
+      ) {
         largestKey = key;
-        largestLength = verbs[key].length;
+        largestLength = filterableVerbs[key].length;
       }
     }
 
@@ -35,7 +38,9 @@ class List extends PureComponent {
       );
 
       if (categoryVerbs.length > 0) {
-        filteredVerbs[category] = categoryVerbs;
+        filteredVerbs[category] = categoryVerbs.sort((a, b) => (
+          a.name > b.name ? 1 : -1
+        ));
       } else {
         filteredVerbs[category] = [];
       }
@@ -45,26 +50,28 @@ class List extends PureComponent {
   };
 
   getTable = (filteredVerbs) => {
-    return filteredVerbs[this.getTheBiggestVerbType()].map((g, index) => (
-      <tr key={index}>
-        {Object.keys(filteredVerbs).map((verbType, typeIndex) => (
-          <td key={typeIndex}>
-            {filteredVerbs[verbType][index] ? (
-              <div className="d-flex">
-                <button
-                  className="btn btn-outline-primary btn-sm m-auto"
-                  onClick={this.clickVerb(filteredVerbs[verbType][index])}
-                >
-                  {filteredVerbs[verbType][index]?.name}
-                </button>
-              </div>
-            ) : (
-              ""
-            )}
-          </td>
-        ))}
-      </tr>
-    ));
+    return filteredVerbs[this.getTheBiggestVerbType(filteredVerbs)].map(
+      (g, index) => (
+        <tr key={index}>
+          {Object.keys(filteredVerbs).map((verbType, typeIndex) => (
+            <td key={typeIndex}>
+              {filteredVerbs[verbType][index] ? (
+                <div className="d-flex">
+                  <button
+                    className="btn btn-outline-primary btn-sm m-auto"
+                    onClick={this.clickVerb(filteredVerbs[verbType][index])}
+                  >
+                    {filteredVerbs[verbType][index]?.name}
+                  </button>
+                </div>
+              ) : (
+                ""
+              )}
+            </td>
+          ))}
+        </tr>
+      )
+    );
   };
 
   clickVerb = (verb) => {

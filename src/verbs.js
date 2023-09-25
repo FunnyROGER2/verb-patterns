@@ -2,7 +2,8 @@ export const verbs = {
   gerund: [
     {
       name: "admit",
-      example: "In&nbsp;court the accused admitted (to) stealing the documents.",
+      example:
+        "In&nbsp;court the accused admitted (to) stealing the documents.",
     },
     {
       name: "avoid",
@@ -10,7 +11,8 @@ export const verbs = {
     },
     {
       name: "be worth",
-      example: "It&nbsp;isn&rsquo;t worth going to&nbsp;the exhibition. It&rsquo;s really boring.",
+      example:
+        "It&nbsp;isn&rsquo;t worth going to&nbsp;the exhibition. It&rsquo;s really boring.",
     },
     {
       name: "can't help",
@@ -24,7 +26,8 @@ export const verbs = {
     },
     {
       name: "carry on",
-      example: "We&nbsp;carried on&nbsp;chatting until about 2.00 in&nbsp;the morning.",
+      example:
+        "We&nbsp;carried on&nbsp;chatting until about 2.00 in&nbsp;the morning.",
     },
     {
       name: "deny",
@@ -33,7 +36,8 @@ export const verbs = {
     },
     {
       name: "enjoy",
-      example: "I&nbsp;used to&nbsp;enjoy flying, but now&nbsp;I don&rsquo;tow&nbsp;I don&rsquo;t.",
+      example:
+        "I&nbsp;used to&nbsp;enjoy flying, but now&nbsp;I don&rsquo;tow&nbsp;I don&rsquo;t.",
     },
     {
       name: "fancy",
@@ -58,7 +62,8 @@ export const verbs = {
     },
     {
       name: "involve",
-      example: "My&nbsp;boyfriend&rsquo;s job involves travelling at&nbsp;least once a&nbsp;month.",
+      example:
+        "My&nbsp;boyfriend&rsquo;s job involves travelling at&nbsp;least once a&nbsp;month.",
     },
     {
       name: "keep (on)",
@@ -71,7 +76,8 @@ export const verbs = {
     },
     {
       name: "mind",
-      example: "I&nbsp;don&rsquo;t mind doing housework. I&nbsp;find it&nbsp;quite relaxing.",
+      example:
+        "I&nbsp;don&rsquo;t mind doing housework. I&nbsp;find it&nbsp;quite relaxing.",
     },
     {
       name: "miss",
@@ -94,7 +100,8 @@ export const verbs = {
     },
     {
       name: "regret",
-      example: "I&nbsp;regret not travelling more before&nbsp;I got my&nbsp;first job.",
+      example:
+        "I&nbsp;regret not travelling more before&nbsp;I got my&nbsp;first job.",
     },
     {
       name: "risk",
@@ -103,21 +110,25 @@ export const verbs = {
     },
     {
       name: "spend",
-      example: "I&nbsp;spent half an&nbsp;hour looking for my&nbsp;glasses this morning.",
+      example:
+        "I&nbsp;spent half an&nbsp;hour looking for my&nbsp;glasses this morning.",
     },
     {
       name: "stop",
-      example: "Once I&nbsp;open a&nbsp;box of&nbsp;chocolates, I&nbsp;can&rsquo;t stop eating them.",
+      example:
+        "Once I&nbsp;open a&nbsp;box of&nbsp;chocolates, I&nbsp;can&rsquo;t stop eating them.",
     },
     {
       name: "suggest",
-      example: "A&nbsp;friend of&nbsp;mine suggested visiting London in&nbsp;the autumn.",
+      example:
+        "A&nbsp;friend of&nbsp;mine suggested visiting London in&nbsp;the autumn.",
     },
   ],
   to: [
     {
       name: "afford",
-      example: "I&nbsp;can&rsquo;t afford to&nbsp;go&nbsp;on&nbsp;holiday this summer.",
+      example:
+        "I&nbsp;can&rsquo;t afford to&nbsp;go&nbsp;on&nbsp;holiday this summer.",
     },
     {
       name: "agree",
@@ -126,7 +137,8 @@ export const verbs = {
     },
     {
       name: "appear",
-      example: "The results appear to&nbsp;support the scientist&rsquo;s theory.",
+      example:
+        "The results appear to&nbsp;support the scientist&rsquo;s theory.",
     },
     {
       name: "arrange",
@@ -134,11 +146,13 @@ export const verbs = {
     },
     {
       name: "be able",
-      example: "I&nbsp;won&rsquo;t be&nbsp;able to&nbsp;work for two weeks after the operation.",
+      example:
+        "I&nbsp;won&rsquo;t be&nbsp;able to&nbsp;work for two weeks after the operation.",
     },
     {
       name: "can't wait",
-      example: "We&nbsp;can&rsquo;t wait to&nbsp;see your new flat&nbsp;&mdash; it&nbsp;sounds fantastic.",
+      example:
+        "We&nbsp;can&rsquo;t wait to&nbsp;see your new flat&nbsp;&mdash; it&nbsp;sounds fantastic.",
     },
     {
       name: "choose",
@@ -151,11 +165,13 @@ export const verbs = {
     },
     {
       name: "deserve",
-      example: "Kim deserves to&nbsp;get the job. She&rsquo;s a&nbsp;very strong candidate.",
+      example:
+        "Kim deserves to&nbsp;get the job. She&rsquo;s a&nbsp;very strong candidate.",
     },
     {
       name: "expect",
-      example: "We&rsquo;re expecting to&nbsp;get our exam results on&nbsp;Friday.",
+      example:
+        "We&rsquo;re expecting to&nbsp;get our exam results on&nbsp;Friday.",
     },
     {
       name: "happen",
@@ -163,21 +179,19 @@ export const verbs = {
         "Tom happened to&nbsp;be&nbsp;at&nbsp;Alan&rsquo;s when&nbsp;I called&nbsp;in, so&nbsp;I invited him to&nbsp;our party as&nbsp;well.",
     },
     {
-      name: "help",
-      example:
-        "The organization&nbsp;I work for helps young people to&nbsp;find work abroad.",
-    },
-    {
       name: "hesitate",
-      example: "Don&rsquo;t hesitate to&nbsp;ask a&nbsp;member of&nbsp;staff if&nbsp;you need anything.",
+      example:
+        "Don&rsquo;t hesitate to&nbsp;ask a&nbsp;member of&nbsp;staff if&nbsp;you need anything.",
     },
     {
       name: "hope",
-      example: "I&rsquo;m hoping to&nbsp;set up&nbsp;my&nbsp;own company if&nbsp;I can get a&nbsp;bank loan.",
+      example:
+        "I&rsquo;m hoping to&nbsp;set up&nbsp;my&nbsp;own company if&nbsp;I can get a&nbsp;bank loan.",
     },
     {
       name: "learn",
-      example: "I&nbsp;wish&nbsp;I had learnt to&nbsp;play the guitar when&nbsp;I was younger.",
+      example:
+        "I&nbsp;wish&nbsp;I had learnt to&nbsp;play the guitar when&nbsp;I was younger.",
     },
     {
       name: "be make",
@@ -190,11 +204,13 @@ export const verbs = {
     },
     {
       name: "offer",
-      example: "Lucy has offered to&nbsp;give me&nbsp;a&nbsp;lift to&nbsp;the station.",
+      example:
+        "Lucy has offered to&nbsp;give me&nbsp;a&nbsp;lift to&nbsp;the station.",
     },
     {
       name: "plan",
-      example: "We&rsquo;re planning to&nbsp;have a&nbsp;big party to&nbsp;celebrate.",
+      example:
+        "We&rsquo;re planning to&nbsp;have a&nbsp;big party to&nbsp;celebrate.",
     },
     {
       name: "pretend",
@@ -213,15 +229,18 @@ export const verbs = {
     },
     {
       name: "seem",
-      example: "Something seems to&nbsp;be&nbsp;wrong with the washing machine.",
+      example:
+        "Something seems to&nbsp;be&nbsp;wrong with the washing machine.",
     },
     {
       name: "teach",
-      example: "Jack&rsquo;s father taught him to&nbsp;drive when he&nbsp;was&nbsp;17.",
+      example:
+        "Jack&rsquo;s father taught him to&nbsp;drive when he&nbsp;was&nbsp;17.",
     },
     {
       name: "tend",
-      example: "My&nbsp;boss tends to&nbsp;lose her temper when she&rsquo;s feeling stressed.",
+      example:
+        "My&nbsp;boss tends to&nbsp;lose her temper when she&rsquo;s feeling stressed.",
     },
     {
       name: "threaten",
@@ -230,7 +249,8 @@ export const verbs = {
     },
     {
       name: "want",
-      example: "The police want to&nbsp;interview anyone who witnessed the crime.",
+      example:
+        "The police want to&nbsp;interview anyone who witnessed the crime.",
     },
     {
       name: "would like",
@@ -245,11 +265,13 @@ export const verbs = {
     },
     {
       name: "had better",
-      example: "You&rsquo;d better leave now if&nbsp;you want to&nbsp;catch that train.",
+      example:
+        "You&rsquo;d better leave now if&nbsp;you want to&nbsp;catch that train.",
     },
     {
       name: "let",
-      example: "Let me&nbsp;pay for coffee&nbsp;&mdash; it&nbsp;must be&nbsp;my&nbsp;turn.",
+      example:
+        "Let me&nbsp;pay for coffee&nbsp;&mdash; it&nbsp;must be&nbsp;my&nbsp;turn.",
     },
     {
       name: "make",
@@ -258,7 +280,8 @@ export const verbs = {
     },
     {
       name: "may",
-      example: "There&rsquo;s a&nbsp;lot of&nbsp;traffic today, so&nbsp;we&nbsp;may be&nbsp;a&nbsp;bit late.",
+      example:
+        "There&rsquo;s a&nbsp;lot of&nbsp;traffic today, so&nbsp;we&nbsp;may be&nbsp;a&nbsp;bit late.",
     },
     {
       name: "might",
@@ -267,7 +290,8 @@ export const verbs = {
     },
     {
       name: "must",
-      example: "I&nbsp;must remember to&nbsp;phone Harry&nbsp;&mdash; it&rsquo;s his birthday today.",
+      example:
+        "I&nbsp;must remember to&nbsp;phone Harry&nbsp;&mdash; it&rsquo;s his birthday today.",
     },
     {
       name: "should",
@@ -278,6 +302,11 @@ export const verbs = {
       name: "would rather",
       example:
         "You look tired. Would you rather stay in&nbsp;this evening and watch a&nbsp;film?",
+    },
+    {
+      name: "help",
+      example:
+        "The organization&nbsp;I work for helps young people to&nbsp;find work abroad.",
     },
   ],
 };

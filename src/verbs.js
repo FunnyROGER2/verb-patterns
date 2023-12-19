@@ -136,20 +136,20 @@ export const verbs = {
         "I&nbsp;can&rsquo;t afford to&nbsp;go&nbsp;on&nbsp;holiday this summer.",
     },
     {
-      name: "encourage",
+      name: "encourage (smn)",
       example: "I&nbsp;encourage all foreigners to&nbsp;try some baklava.",
     },
     {
-      name: "urge",
+      name: "urge (smn)",
       example:
         "I&nbsp;urge you to&nbsp;visit the different communities in&nbsp;New York.",
     },
     {
-      name: "persuade",
+      name: "persuade (smn)",
       example: "She persuaded&nbsp;us to&nbsp;visit Cork in&nbsp;the spring.",
     },
     {
-      name: "advise",
+      name: "advise (smn)",
       example:
         "I&nbsp;advise you to&nbsp;go&nbsp;to&nbsp;the Antipodes festival.",
     },

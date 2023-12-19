@@ -80,6 +80,11 @@ export const verbs = {
         "I&nbsp;don&rsquo;t mind doing housework. I&nbsp;find it&nbsp;quite relaxing.",
     },
     {
+      name: "object to",
+      example:
+        "If&nbsp;you object to&nbsp;paying lots of&nbsp;money for clothes, don&rsquo;t go&nbsp;shopping in&nbsp;Ginza, Tokyo.",
+    },
+    {
       name: "miss",
       example: "Does your father miss working now that he&nbsp;has retired?",
     },
@@ -129,6 +134,24 @@ export const verbs = {
       name: "afford",
       example:
         "I&nbsp;can&rsquo;t afford to&nbsp;go&nbsp;on&nbsp;holiday this summer.",
+    },
+    {
+      name: "encourage",
+      example: "I&nbsp;encourage all foreigners to&nbsp;try some baklava.",
+    },
+    {
+      name: "urge",
+      example:
+        "I&nbsp;urge you to&nbsp;visit the different communities in&nbsp;New York.",
+    },
+    {
+      name: "persuade",
+      example: "She persuaded&nbsp;us to&nbsp;visit Cork in&nbsp;the spring.",
+    },
+    {
+      name: "advise",
+      example:
+        "I&nbsp;advise you to&nbsp;go&nbsp;to&nbsp;the Antipodes festival.",
     },
     {
       name: "agree",
